@@ -12,22 +12,22 @@ go.modules.tutorial.music.ArtistDialog = Ext.extend(go.form.Dialog, {
 	// return an array of form items here.
 	initFormItems: function () {
 		return [{
-				// it's recommended to wrap all fields in field sets for consistent style.
-				xtype: 'fieldset',
-				title: t("Artist information"),
-				items: [
-					this.avatarComp = new go.form.ImageField({			
-						name: 'photo'										
-					}),
+			// it's recommended to wrap all fields in field sets for consistent style.
+			xtype: 'fieldset',
+			title: t("Artist information"),
+			items: [
+				this.avatarComp = new go.form.ImageField({
+					name: 'photo'
+				}),
 
-					{
-						xtype: 'textfield',
-						name: 'name',
-						fieldLabel: t("Name"),
-						anchor: '100%',
-						allowBlank: false
-					}]
-			},
+				{
+					xtype: 'textfield',
+					name: 'name',
+					fieldLabel: t("Name"),
+					anchor: '100%',
+					allowBlank: false
+				}]
+		},
 
 			{
 				xtype: "fieldset",
@@ -41,20 +41,25 @@ go.modules.tutorial.music.ArtistDialog = Ext.extend(go.form.Dialog, {
 						xtype: "formgroup",
 						name: "albums",
 						hideLabel: true,
+						mapKey: 'id',
 
 						// this will add dp(16) padding between rows.
 						pad: true,
 
 						//the itemCfg is used to create a component for each "album" in the array.
 						itemCfg: {
+							layout: "form",
 							defaults: {
 								anchor: "100%"
 							},
 							items: [{
-									xtype: "textfield",
-									fieldLabel: t("Name"),
-									name: "name"
-								},
+								xtype: "hidden",
+								name: "id"
+							}, {
+								xtype: "textfield",
+								fieldLabel: t("Name"),
+								name: "name"
+							},
 
 								{
 									xtype: "datefield",

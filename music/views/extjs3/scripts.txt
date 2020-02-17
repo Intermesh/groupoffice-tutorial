@@ -5,3 +5,5 @@ ArtistGrid.js
 GenreCombo.js
 ArtistDialog.js
 ArtistDetail.js
+ReviewDialog.js
+ReviewsModal.js

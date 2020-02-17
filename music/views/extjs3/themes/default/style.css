@@ -1,0 +1,9 @@
+.go-detail-view-avatar {
+  text-align: center;
+}
+.go-detail-view-avatar > .avatar {
+  width: 120px;
+  height: 120px;
+}
+
+/*# sourceMappingURL=style.css.map */
