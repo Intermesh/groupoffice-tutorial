@@ -83,7 +83,7 @@ export class Main extends MainThreeColumnPanel {
 
 	protected createEast(): ArtistDetail {
 		const detail = new ArtistDetail();
-		detail.itemId = "detail";
+		detail.itemId = "artistDetail";
 		detail.stateId = "artist-detail";
 		detail.toolbar.items.insert(0,this.showCenterButton());
 		return detail;

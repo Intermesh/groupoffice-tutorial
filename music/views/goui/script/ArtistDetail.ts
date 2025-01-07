@@ -176,10 +176,10 @@ export class ArtistDetail extends DetailPanel<Artist> {
 		);
 
 		this.addCustomFields();
-		this.addComments();
-		this.addFiles();
-		this.addLinks();
-		this.addHistory();
+		// this.addComments();
+		// this.addFiles();
+		// this.addLinks();
+		// this.addHistory();
 
 		this.toolbar.items.add(
 			btn({

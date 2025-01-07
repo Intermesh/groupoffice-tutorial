@@ -3,6 +3,8 @@ import { JmapDataSource, img, jmapds } from "@intermesh/groupoffice-core";
 
 interface Artist extends BaseEntity {
 	name: string,
+	active: boolean,
+	photo: string
 }
 
 export class ArtistTable extends Table<DataSourceStore> {
