@@ -1,0 +1,11 @@
+.go-detail-view-avatar {
+  min-width: 240px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  & > .goui-avatar-detail {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+  }
+}

@@ -1,7 +1,0 @@
-Module.js
-MainPanel.js
-GenreFilter.js
-ArtistGrid.js
-GenreCombo.js
-ArtistDialog.js
-ArtistDetail.js
